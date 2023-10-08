@@ -1,0 +1,354 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+/* ===================NORMALIZE=================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* ===================/NORMALIZE=================== */
+
+/* ===================VAR=================== */
+:root {
+  --brand-color: #4d5ae5;
+
+  --pressed-color: #404bbf;
+
+  --white-color: #fff;
+
+  --primary-color: #2e2f42;
+
+  --text-color: #434455;
+  --cloud-color: #f4f4fd;
+}
+/* ===================/VAR=================== */
+
+/* ===================COMPONENTS=================== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--brand-color);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+.btn:hover,
+:focus {
+  background: var(--pressed-color);
+}
+.section-title {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.card-title {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.4px;
+}
+.card-descr {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+}
+/* ===================/COMPONENTS=================== */
+
+/* ===================HEADER=================== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  display: flex;
+  gap: 40px;
+}
+.logo {
+  color: var(--brand-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.logo-part {
+  color: var(--primary-color);
+}
+.menu-item-link {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  padding: 24px 0;
+}
+.menu-item-link:hover {
+  color: var(--pressed-color);
+}
+.menu-item-link:focus {
+  color: var(--pressed-color);
+}
+.contact {
+  font-style: normal;
+}
+.contact-item {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+}
+.contact-item-link {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  padding: 24px 0;
+}
+.contact-item-link:hover {
+  color: var(--pressed-color);
+}
+.contact-item-link:focus {
+  color: var(--pressed-color);
+}
+/* ===================/HEADER=================== */
+
+/* ===================HERO=================== */
+.hero {
+  min-height: 600px;
+  padding: 188px 0;
+  background-color: var(--primary-color);
+}
+.hero-title {
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  color: var(--white-color);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07; /* 107.143% */
+  letter-spacing: 1.12px;
+}
+.btn-hero {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+}
+/* ===================/HERO=================== */
+
+/* ===================ADVANTAGES=================== */
+.advantages {
+  padding: 120px 0;
+  min-height: 344px;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.card-item {
+  max-width: 264px;
+}
+.card-title {
+  margin-bottom: 8px;
+}
+/* ===================/ADVANTAGES=================== */
+
+/* ===================DOING=================== */
+.doing {
+  min-height: 500px;
+  padding: 120px 0;
+}
+.doing-title {
+  margin-bottom: 72px;
+}
+.doing-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+/* ===================/DOING=================== */
+
+/* ===================TEAM=================== */
+.team {
+  background-color: var(--cloud-color);
+  min-height: 732px;
+  padding: 120px 0;
+}
+.team-title {
+  margin-bottom: 72px;
+}
+.team-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.team-card {
+  background-color: var(--white-color);
+  width: 264px;
+  min-height: 348px;
+  border-radius: 0px 0px 4px 4px;
+}
+.card-text-wrapper {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-card-title {
+  text-align: center;
+}
+.team-card-descr {
+  text-align: center;
+}
+
+/* ===================/TEAM=================== */
+
+/* ===================FOOTER=================== */
+.footer {
+  background-color: var(--primary-color);
+  min-height: 312px;
+  padding: 100px 0;
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo-part-footer {
+  color: var(--cloud-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16; /* 116.667% */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.footer-descr {
+  color: var(--cloud-color);
+  max-width: 264px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+}
+/* ===================/FOOTER=================== */
+
+/* Portfolio */
+.portfolio {
+  min-height: 1692px;
+  padding: 96px 0 120px 0;
+}
+/* ===================Filter buttons=================== */
+.filter-btn-wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.filter-button {
+  padding: 12px 24px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cloud-color);
+  color: var(--brand-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
+.filter-button:hover,
+:focus {
+  background-color: var(--pressed-color);
+  color: var(--white-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
+}
+/* ===================/Filter buttons=================== */
+
+/* ===================Gellery=================== */
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+.gallery-card-text-wrapper {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  background: var(--WHITE, #fff);
+  padding: 32px 16px;
+}
+.gallery-card-title {
+  margin-bottom: 8px;
+}
+
+/* ===================/Gellery=================== */
