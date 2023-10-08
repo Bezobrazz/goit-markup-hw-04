@@ -217,9 +217,9 @@ img {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
+  padding: 24px 100px;
   border-radius: 4px;
   background: var(--cloud-color, #f4f4fd);
-  padding: 24px 100px;
 }
 .advantages-icon-img {
   width: 64px;
@@ -284,6 +284,25 @@ img {
 }
 .team-card-descr {
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-social-wrapper {
+  display: flex;
+  gap: 24px;
+}
+.team-social-item {
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}
+
+.team-social-img {
+  width: 16px;
+  height: 16px;
+  fill: var(--white-color);
 }
 
 /* ===================/TEAM=================== */
