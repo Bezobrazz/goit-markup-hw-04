@@ -179,6 +179,11 @@ img {
   min-height: 600px;
   padding: 188px 0;
   background-color: var(--primary-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/hero-bg.jpg');
 }
 .hero-title {
   max-width: 496px;
@@ -202,6 +207,23 @@ img {
 .advantages {
   padding: 120px 0;
   min-height: 344px;
+}
+.advantages-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.advantages-icon-item {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--cloud-color, #f4f4fd);
+  padding: 24px 100px;
+}
+.advantages-icon-img {
+  width: 64px;
+  height: 64px;
 }
 .card-wrapper {
   display: flex;
