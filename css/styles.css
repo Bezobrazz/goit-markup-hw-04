@@ -267,11 +267,15 @@ img {
   justify-content: space-between;
   gap: 24px;
 }
+
 .team-card {
   background-color: var(--white-color);
   width: 264px;
   min-height: 348px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .card-text-wrapper {
   padding: 32px 0;
@@ -298,6 +302,9 @@ img {
   background-color: var(--brand-color);
   border-radius: 50%;
 }
+.team-social-item:hover {
+  background-color: var(--pressed-color);
+}
 
 .team-social-img {
   width: 16px;
@@ -306,6 +313,29 @@ img {
 }
 
 /* ===================/TEAM=================== */
+
+/* ===================CUSTOMERS=================== */
+.customers {
+  padding: 120px 0;
+}
+.customers-title {
+  margin-bottom: 72px;
+}
+.customers-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-img {
+  width: 168px;
+  height: 88px;
+  border: 1px solid rgba(142, 143, 153, 1);
+  border-radius: 5%;
+}
+/* ===================/CUSTOMERS=================== */
 
 /* ===================FOOTER=================== */
 .footer {
