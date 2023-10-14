@@ -60,11 +60,25 @@
       </div>
     </header>
 
+    <!-- Modal -------------------->
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <div class="modal-window-close-background" data-modal-close>
+          <svg class="modal-window-close-img" data-modal-close>
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal ------------------->
+
     <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn btn-hero" type="button">Order Service</button>
+          <button class="btn btn-hero" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -221,6 +235,39 @@
               <div class="card-text-wrapper">
                 <h3 class="card-title team-card-title">Tom Ford</h3>
                 <p class="card-descr team-card-descr">Frontend Developer</p>
+                <ul class="list team-social-wrapper">
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-instagram1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-twitter1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-facebook1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-linkedin1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-card">
@@ -233,6 +280,39 @@
               <div class="card-text-wrapper">
                 <h3 class="card-title team-card-title">Camila Garcia</h3>
                 <p class="card-descr team-card-descr">Marketing</p>
+                <ul class="list team-social-wrapper">
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-instagram1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-twitter1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-facebook1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-linkedin1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-card">
@@ -245,6 +325,39 @@
               <div class="card-text-wrapper">
                 <h3 class="card-title team-card-title">Daniel Wilson</h3>
                 <p class="card-descr team-card-descr">UI Designer</p>
+                <ul class="list team-social-wrapper">
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-instagram1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-twitter1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-facebook1"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team-social-item">
+                    <a class="team-social-link" href="#">
+                      <svg class="team-social-img">
+                        <use href="./images/icons.svg#icon-linkedin1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -339,5 +452,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
