@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   background-color: var(--white-color);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* ===================NORMALIZE=================== */
