@@ -49,6 +49,7 @@ img {
 
   --text-color: #434455;
   --cloud-color: #f4f4fd;
+  --light-slate: #8e8f99;
 }
 /* ===================/VAR=================== */
 
@@ -81,7 +82,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
-:focus {
+.btn:focus {
   background-color: var(--pressed-color);
 }
 .section-title {
@@ -144,7 +145,8 @@ img {
 }
 .menu-item-link {
   position: relative;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #404bbf;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -152,9 +154,7 @@ img {
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-item-link:hover {
-  color: var(--pressed-color);
-}
+.menu-item-link:hover,
 .menu-item-link:focus {
   color: var(--pressed-color);
 }
@@ -253,7 +253,7 @@ img {
 /* ===================HERO=================== */
 .hero {
   min-height: 600px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   padding: 188px 0;
   background-color: var(--primary-color);
   background-image: linear-gradient(
@@ -413,24 +413,34 @@ img {
 .customers-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 .customers-item {
   width: 168px;
   height: 88px;
 }
-.customers-img {
-  width: 168px;
-  height: 88px;
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
-  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-  fill: rgba(142, 143, 153, 1);
+  color: var(--light-slate);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-img:hover {
-  fill: var(--pressed-color);
-  border-color: var(--pressed-color);
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #404bbf;
+  color: var(--pressed-color);
 }
+.customers-img {
+  fill: currentColor;
+}
+
 /* ===================/CUSTOMERS=================== */
 
 /* ===================FOOTER=================== */
@@ -537,7 +547,7 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
-:focus {
+.filter-button:focus {
   background-color: var(--pressed-color);
   color: var(--white-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
